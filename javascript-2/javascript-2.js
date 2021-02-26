@@ -36,6 +36,10 @@ let foods = [
 */
 
 //CODE HERE
+foods.forEach(function(elem, ind, arr){     //why can't i remember how to add a new key:value pair to each object in an array
+  for(let key in obj){
+    foods[key[calories]]
+}
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -81,7 +85,9 @@ const products = [
 */
 
 //CODE HERE
-
+let saleProducts = products.map((elem) => {               //if i want reduce the price by 25%, then divide the price by 4...?
+ return products[price /= 4];  
+}
 ////////////////////PROBLEM 3////////////////////
 /*
   A customer has placed an order - they want one of every product that has blue on it. 
@@ -91,7 +97,9 @@ const products = [
 */
 
 //CODE HERE
-
+const blueProducts = (arr) (elem => {
+  return elem.includes(blue)
+})
 ////////////////////PROBLEM 4////////////////////
 /*
   Now you'd like to get them their order total. 
@@ -100,7 +108,11 @@ const products = [
 */
 
 //CODE HERE
-
+const orderTotal = blueProducts.reduce((acc, curr) => {                   //this one's a blur. not sure what the next step is. 
+  return (acc + curr);
+},
+orderTotal(blue,)
+)
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
   For these problems we will be using the objects below, contactInfo and shippingInfo,
@@ -130,6 +142,7 @@ const shippingInfo = {
 */
 
 //CODE HERE
+const helensInfo = Object.assign(contactInfo, shippingInfo);
 
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -139,6 +152,12 @@ const shippingInfo = {
 */
 
 //CODE HERE
+const ellensInfo = {...Ellen} 
+for(let key in contactInfo){
+  if(key === 'email'){
+    contactInfo[key].push('ellen@email.com')
+  }
+}
 
 ////////////////////PROBLEM 7////////////////////
 /* 
@@ -252,6 +271,28 @@ const userInfo = {
 
 //CODE HERE
 
+const person = {
+  name: 'Sara',
+  age: 30,
+  jobs: ['Baker', 'Pastry Chef', 'Dog Walker'],
+  birthday: function(){
+    
+  }
+  favorites: {
+    color: 'Yellow',
+    number: 7,
+    book: 'Harry Potter',
+    kids: [ kid1 = {
+      name: 'Brenden',
+      age: 3
+    }
+            kid2 = {
+              name: 'Chelsea',
+              age: 3
+            } ]
+  }
+}
+
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
   For the last two problems, you will be determining the 
@@ -276,7 +317,7 @@ const workout = {
 //let context1 = myFunc
 //let context1 = window
 //let context1 = global
-// let context1 = workout
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -288,7 +329,7 @@ function myFunc() {
   return this
 }
 
-//let context2 = myFunc
+let context2 = myFunc
 // let context2 = window
 //let context2 = global
 //let context2 = workout

@@ -9,7 +9,7 @@
 */
 
 //CODE HERE
-
+const myArr = [4, 'abc',['cat', 'dog', 'bird'], 77];
 
 ////////////////////PROBLEM 2////////////////////
 /*
@@ -21,6 +21,7 @@
 const nestedLetters = ['m', 'g', 'e', 'q', 'h', ['n', 'b', ['v', 'z', 'y', 'r']], 'a']
 
 //CODE HERE
+let foundZ = nestedLetters[5][2][1];
 
 
 ////////////////////PROBLEM 3////////////////////
@@ -37,7 +38,7 @@ const desert = ['rattlesnake', 'coyote']
 //DO NOT EDIT CODE ABOVE
 
 //CODE HERE
-
+const animals = [...forest, ...ocean, ...savannah, ...desert];
 
 /*
     Now use the spread operator to make a copy of your animals array.
@@ -45,7 +46,7 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-
+let animalsCopy = [...animalsCopy.push('elephant')];
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -56,7 +57,14 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-
+let compareNums = (num1, num2) => {
+    if (num1 > num2) {
+        return num1
+    } else {
+        return
+    }
+    compareNums(5,2)
+}
   
 ////////////////////PROBLEM 5////////////////////
 /*
@@ -68,7 +76,9 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-  
+let bestMovie = movieName => `${movieName} is the the best movie ever!`;
+bestMovie('Sharknado')
+
   
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -76,7 +86,8 @@ const desert = ['rattlesnake', 'coyote']
 */
 
 //CODE HERE
-  
+let jsNinja = warrior => `I am a JavaScript ${warrior}!`
+jsNinja(ninja)
 
 ////////////////////PROBLEM 7////////////////////
 
@@ -270,7 +281,14 @@ let pairsArray = []
 */
 
 //CODE HERE
+function Phone(brand, model, strorage, color, sold){
+    this.brand = brand;
+    this.model = model;
+    this.strorage = storage;
+    this.color = color;
+    this.sold = sold;
 
+}
   
 /*
     Next make three new phones using your constructor function.
@@ -284,11 +302,11 @@ let pairsArray = []
 */
 
 //CODE HERE
-  // let phone1 = 
+  let phone1 = new Phone('samsung', 'galaxy', 75, 'grey', false)
   
-  // let phone2 = 
+  let phone2 = new Phone('apple', 'iPhone', 80, 'yellow', false)
   
-  // let phone3 = 
+  let phone3 = new Phone('nokia', '3310', 4, 'grey', false)
   
 /*
     Last, add a prototype method to Phone.
@@ -300,4 +318,4 @@ let pairsArray = []
 
 //CODE HERE
 
-  
+ 

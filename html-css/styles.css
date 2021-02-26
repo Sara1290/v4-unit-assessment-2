@@ -1,3 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 150vh;
+}
+
+.page-header {
+    height: 10vh;
+    width: 100%;
+    background-color:rgb(37, 37, 37);
+    display: flex;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+
+.page-title {
+    color:rgb(42, 171, 226);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.nav-links {
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10vw;
+}
+
+.nav-links > a{
+    flex-direction: row;
+}
+
+.popular-articles {
+    overflow: auto;
+    height: 220px;
+    width: 200px;
+    border: 2px solid black;
+    box-shadow:rgba(102, 75, 75, .3);
+    position: relative;
+    left: 1200px;
+}
+
+.user-avatar {
+    height: 200px;
+    width: 200px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 
 these are the colors used in the example
