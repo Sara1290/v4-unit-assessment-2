@@ -1,71 +1,132 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     height: 150vh;
+    margin: 0;
+    padding: 0;
 }
 
 .page-header {
-    height: 10vh;
+    height: 8vh;
     width: 100%;
-    background-color:rgb(37, 37, 37);
-    display: flex;
-    position: fixed;
+    background-color: rgb(37, 37, 37);
+    position: sticky;
     top: 0px;
+    display: flex;
+    justify-content: space-between;
     z-index: 1;
+
 }
 
-.page-title {
-    color:rgb(42, 171, 226);
+h1 {
+    color: rgb(42, 171, 226);
     font-family: Arial, Helvetica, sans-serif;
-
+    display: flex;
+    align-items: center;
 }
 
 .nav-links {
-    height: 10vh;
-    width: 100%;
-    position: fixed;
-    flex-direction: row;
+    height: 8vh;
+    width: 20%;
+    display: flex;
     align-items: center;
     margin-right: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-family: Arial, Helvetica, sans-serif;
     margin-left: 10vw;
 }
 
-.nav-links > a{
-    flex-direction: row;
+.nav-links > a {
+    text-decoration: none;
+    color: white;
+
 }
 
-.popular-articles {
-    overflow: auto;
-    height: 220px;
-    width: 200px;
-    border: 2px solid black;
-    box-shadow:rgba(102, 75, 75, .3);
-    position: relative;
-    left: 1200px;
-}
 
-.user-avatar {
+.profile {
     height: 200px;
     width: 200px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 50px 0px rgba(102, 75, 75, .3);
+    display: inline-block;
     position: relative;
+    left: 1250px;
+}
+
+.profile-img {
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+}
+
+.profile-text {
+    /* height: 100px; */
+    /* width: 50px; */
+    font-weight: bold;
+    position: absolute;
+    top: 145px;
+    left: 55px;
+}
+
+.article {
+    width: 75vw;
 }
 
 
 
+.popular-articles {
+    height: 250px;
+    width: 250px;
+    border-radius: 5%;
+    box-shadow: 0px 0px 50px 0px rgba(102, 75, 75, .3);
+    display: inline-block;
+    position: relative;
+    left: 1250px;
+}
 
 
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+}
 
 
+.dev-mtn {
+    height: 400px;
+    width: 320px;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
 
 
+.blue-bar-footer {
+    height: 8vh;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgb(42, 171, 226);
+    display: flex;
+}
 
+.Qmark {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    left: 1200px;
+    top: 8px;
+}
 
+.footer-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    align-items: center;
+}
 
 
 
