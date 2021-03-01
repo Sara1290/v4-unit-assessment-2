@@ -46,7 +46,7 @@ const animals = [...forest, ...ocean, ...savannah, ...desert];
 */
 
 //CODE HERE
-let animalsCopy = [...animalsCopy.push('elephant')];
+let animalsCopy = [...animals.push('elephant')];
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -86,7 +86,7 @@ bestMovie('Sharknado')
 */
 
 //CODE HERE
-let jsNinja = warrior => `I am a JavaScript ${warrior}!`
+let jsNinja = elem => `I am a JavaScript ${elem}!`
 jsNinja(ninja)
 
 ////////////////////PROBLEM 7////////////////////
@@ -108,7 +108,8 @@ jsNinja(ninja)
 */
 
 //CODE HERE
-  
+ 
+delete gameInfo.rating;
 
 ////////////////////PROBLEM 8////////////////////
 
